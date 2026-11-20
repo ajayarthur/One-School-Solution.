@@ -33,3 +33,4 @@ git push -u origin main
 - **`.gitignore`**: Excludes `node_modules/`, `.env`, temporary logs, scratch files, and OS cache files.
 - **`README.md`**: Complete documentation covering features, tech stack, quick start guide, directory map, and contact information.
 - **`.env.example`**: Clean environment template for email configuration.
+
