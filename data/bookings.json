@@ -1,0 +1,123 @@
+[
+  {
+    "firstName": "Test",
+    "lastName": "Admin",
+    "schoolName": "Delhi Public School",
+    "role": "Principal / Director",
+    "email": "principal@dps.edu",
+    "phone": "+91 98765 43210",
+    "product": "Complete School Platform (All-In-One)",
+    "receivedAt": "2026-11-16T07:00:39.349Z",
+    "targetEmail": "onesolution880@gmail.com"
+  },
+  {
+    "firstName": "Manikanta",
+    "lastName": "Reddy",
+    "schoolName": "SunRais International School",
+    "role": "Principal / Director",
+    "email": "manikanta@sunrais.edu",
+    "phone": "+91 94400 12345",
+    "product": "Complete School Platform (All-In-One)",
+    "receivedAt": "2026-11-16T07:04:34.717Z",
+    "targetEmail": "onesolution880@gmail.com"
+  },
+  {
+    "firstName": "Ajay",
+    "lastName": "Kumar",
+    "schoolName": "Cambridge International School",
+    "role": "Principal / Director",
+    "email": "ajay.kumar@cambridge.edu",
+    "phone": "+91 98888 77777",
+    "product": "Complete School Platform (All-In-One)",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-16T07:12:17.294Z"
+  },
+  {
+    "firstName": "ajay",
+    "lastName": "arthur",
+    "schoolName": "ajay school",
+    "role": "School Administrator",
+    "email": "ajaykumar903555@gmail.com",
+    "phone": "7349512296",
+    "product": "Complete School Platform (All-In-One)",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-16T07:16:07.484Z"
+  },
+  {
+    "firstName": "Dr. Ramesh",
+    "lastName": "Sharma",
+    "schoolName": "Delhi Public International School",
+    "role": "Principal / Director",
+    "email": "principal@dpis-demo.edu",
+    "phone": "+91 98111 22233",
+    "product": "Complete School Platform (All-In-One)",
+    "receivedAt": "2026-11-18T06:48:41.200Z",
+    "targetEmail": "onesolution880@gmail.com"
+  },
+  {
+    "firstName": "Anita",
+    "lastName": "Deshmukh",
+    "schoolName": "National Public School",
+    "role": "Academic Coordinator",
+    "email": "anita@nps.edu",
+    "phone": "+91 94433 22110",
+    "product": "Smart Timetable & Gradebooks",
+    "receivedAt": "2026-11-18T06:49:28.735Z",
+    "targetEmail": "onesolution880@gmail.com"
+  },
+  {
+    "firstName": "Vikram",
+    "lastName": "Singhania",
+    "schoolName": "St. Xavier High School",
+    "role": "Principal / Director",
+    "email": "vikram@stxaviers.edu",
+    "phone": "+91 99887 76655",
+    "product": "Complete School Platform (All-In-One)",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-18T06:50:18.003Z"
+  },
+  {
+    "firstName": "Vikram",
+    "lastName": "Singhania",
+    "schoolName": "St. Xavier High School",
+    "role": "Principal / Director",
+    "email": "vikram@stxaviers.edu",
+    "phone": "+91 99887 76655",
+    "product": "Complete School Platform (All-In-One)",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-18T06:50:53.899Z"
+  },
+  {
+    "firstName": "Vikram",
+    "lastName": "Singhania",
+    "schoolName": "St. Xavier High School",
+    "role": "Principal / Director",
+    "email": "vikram@stxaviers.edu",
+    "phone": "+91 99887 76655",
+    "product": "Complete School Platform (All-In-One)",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-18T06:51:41.473Z"
+  },
+  {
+    "firstName": "Vikram",
+    "lastName": "Singhania",
+    "schoolName": "St. Xavier High School",
+    "role": "Principal / Director",
+    "email": "vikram@stxaviers.edu",
+    "phone": "+91 99887 76655",
+    "product": "Complete School Platform (All-In-One)",
+    "receivedAt": "2026-11-18T06:52:21.717Z",
+    "targetEmail": "onesolution880@gmail.com"
+  },
+  {
+    "firstName": "ajay",
+    "lastName": "arthur",
+    "schoolName": "ajay school",
+    "role": "Principal / Director",
+    "email": "ajaykumar903555@gmail.com",
+    "phone": "7349512296",
+    "product": "Web Administrative Platform",
+    "targetEmail": "onesolution880@gmail.com",
+    "receivedAt": "2026-11-18T06:55:00.838Z"
+  }
+]

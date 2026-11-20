@@ -1,0 +1,13 @@
+{
+  "name": "one-school-solution-landing",
+  "version": "2.0.0",
+  "description": "Premium Cinematic Landing Page for ONE SCHOOL SOLUTION (OS²)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^10.6.0",
+    "untun": "^0.2.2"
+  }
+}

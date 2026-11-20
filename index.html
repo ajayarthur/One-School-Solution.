@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONE SCHOOL SOLUTION (OS²) | Premium Unified School Management Ecosystem</title>
+  <meta name="description" content="An enterprise-grade school management platform connecting schools, parents, teachers, and administrators. 24-workspace Web Platform plus synchronized native mobile apps.">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Cinematic Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==========================================================================
+       SCROLL-LINKED VOLUMETRIC CLOUD TRANSITION CURTAIN
+       Organic soft white cloud banks that billow closed and open between sections
+       ========================================================================== -->
+  <div class="scroll-cloud-curtain" id="scroll-cloud-curtain" aria-hidden="true">
+    <!-- Left Volumetric Cloud Bank -->
+    <div class="curtain-bank curtain-bank-left" id="curtain-bank-left">
+      <div class="curtain-billow billow-l1"></div>
+      <div class="curtain-billow billow-l2"></div>
+      <div class="curtain-billow billow-l3"></div>
+      <div class="curtain-billow billow-l4"></div>
+      <div class="curtain-billow billow-l5"></div>
+      <div class="curtain-wisp wisp-l1"></div>
+      <div class="curtain-wisp wisp-l2"></div>
+    </div>
+
+    <!-- Right Volumetric Cloud Bank -->
+    <div class="curtain-bank curtain-bank-right" id="curtain-bank-right">
+      <div class="curtain-billow billow-r1"></div>
+      <div class="curtain-billow billow-r2"></div>
+      <div class="curtain-billow billow-r3"></div>
+      <div class="curtain-billow billow-r4"></div>
+      <div class="curtain-billow billow-r5"></div>
+      <div class="curtain-wisp wisp-r1"></div>
+      <div class="curtain-wisp wisp-r2"></div>
+    </div>
+
+    <!-- Center Blending Mist Veil -->
+    <div class="curtain-mist-center" id="curtain-mist-center"></div>
+
+    <!-- Atmospheric Horizon Drift Clouds -->
+    <div class="curtain-drift-top" id="curtain-drift-top"></div>
+    <div class="curtain-drift-bottom" id="curtain-drift-bottom"></div>
+  </div>
+
+
+  <!-- ==========================================================================
+       SECTION 10: MINIMAL FLOATING GLASS NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-nav" id="site-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="nav-logo-wrap">
+          <img src="img/logo.png" alt="ONE SCHOOL SOLUTIONS Official Logo">
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-title">ONE SCHOOL SOLUTIONS <span>OS²</span></span>
+          <span class="brand-subtitle">Unified Ecosystem</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#campus" class="nav-link">Campus</a></li>
+        <li><a href="#experience" class="nav-link">Live Demo</a></li>
+        <li><a href="#partnership" class="nav-link">Partnership</a></li>
+        <li><a href="#classroom" class="nav-link">Classroom</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#cta" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-nav-cta trigger-demo-modal"><i class="fas fa-paper-plane"></i> Book Demo</button>
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTIONS 2 & 3: OPENING SCREEN – SKY, SUNRISE & SCROLL-BASED CLOUD TRANSITION
+       ========================================================================== -->
+  <section class="hero-scroll-wrapper" id="hero">
+    <div class="hero-sticky-container">
+
+      <!-- Sky Atmosphere Layered Crossfade for Instant Weather Transitions -->
+      <div class="sky-atmosphere">
+        <div class="sky-layer sky-layer-morning"></div>
+        <div class="sky-layer sky-layer-afternoon"></div>
+        <div class="sky-layer sky-layer-evening"></div>
+        <div class="sky-layer sky-layer-night"></div>
+      </div>
+
+      <!-- Night Stars & Twinkling Constellations Layer -->
+      <div class="stars-layer" id="stars-layer"></div>
+
+      <!-- Night Luminous Crescent Moon with Soft Lunar Halo -->
+      <div class="night-moon-group">
+        <div class="moon-halo"></div>
+        <div class="moon-crescent"></div>
+      </div>
+
+      <!-- Golden Sun with Animated Corona and Volumetric Sun Rays -->
+      <div class="sunrise-sun-group">
+        <div class="sun-corona"></div>
+        <div class="sun-rays"></div>
+        <div class="sun-core"></div>
+      </div>
+
+      <!-- Interactive 3D Cloud Canvas (Soft Volumetric Particles & Parallax) -->
+      <canvas id="cloud-canvas"></canvas>
+
+      <!-- Back Cloud Layers (Soft Morning Sunlight Ambient Shading) -->
+      <div class="cloud-layer cloud-layer-back">
+        <div class="cloud-billow billow-1"></div>
+        <div class="cloud-billow billow-2"></div>
+      </div>
+
+      <!-- Midground Cloud Layer -->
+      <div class="cloud-layer cloud-layer-mid">
+        <div class="cloud-billow billow-3"></div>
+      </div>
+
+      <!-- Atmospheric Horizon Cloud Floor -->
+      <div class="cloud-horizon-floor"></div>
+
+      <!-- Foreground Clouds (Fly towards viewer and part on scroll) -->
+      <div class="cloud-layer cloud-layer-front">
+        <div class="cloud-billow billow-front-left"></div>
+        <div class="cloud-billow billow-front-right"></div>
+      </div>
+
+      <!-- Centerpiece Official Logo, Title & Tagline -->
+      <div class="hero-centerpiece">
+        <h1 class="hero-main-title">
+          One School. One Solution.<br>
+          <span class="gold-accent">A Brighter Future.</span>
+        </h1>
+
+        <p class="hero-tagline">
+          The unified school management ecosystem connecting schools, parents, teachers, and administrators. Experience real-time synchronization, enterprise administration, and heartwarming child care.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary-hero">
+            <span>Explore Experience</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <button type="button" class="btn-secondary-hero btn-click-to-join trigger-demo-modal" id="btn-hero-click-to-join" title="Join ONE SCHOOL SOLUTION or Book a Live School Demo">
+            <i class="fas fa-user-plus"></i>
+            <span>Click to Join</span>
+          </button>
+        </div>
+
+        <!-- ==================================================================
+             CIRCULAR ROTATING CARD CAROUSEL (4 Atmospheric Cards in Circular Orbit)
+             ================================================================== -->
+        <div class="circular-carousel-wrapper" id="circular-carousel-wrapper">
+          
+          <!-- Central Orbital Stage with Rotating Orbit Rings & Center Point Core -->
+          <div class="circular-carousel-stage" id="circular-carousel-stage">
+            
+            <!-- Center Point with Orbital Rings and Glowing Celestial Icon -->
+            <div class="carousel-center-orbit" aria-hidden="true">
+              <div class="orbit-glow-halo"></div>
+              <div class="orbit-ring-outer"></div>
+              <div class="orbit-ring-inner"></div>
+              <div class="orbit-center-core">
+                <i class="fas fa-sun" id="orbit-core-icon"></i>
+              </div>
+            </div>
+
+            <!-- 4 Rotating Orbit Cards in Circular Loop -->
+            <div class="carousel-orbit-track" id="carousel-orbit-track">
+              
+              <!-- Card 0: Morning Sunrise • Student Profile -->
+              <article class="orbit-card is-front" data-index="0" data-atmosphere="morning" role="button" tabindex="0" aria-label="Morning: Student Profile">
+                <div class="orbit-card-banner">
+                  <img src="img/time-morning.jpg" alt="Morning Sunrise">
+                  <span class="orbit-time-pill"><i class="fas fa-sun"></i> Morning</span>
+                </div>
+                <div class="orbit-card-body">
+                  <div class="orbit-card-header">
+                    <div class="orbit-card-icon"><i class="fas fa-user-graduate"></i></div>
+                    <span class="orbit-role-pill">Complete Student Info</span>
+                  </div>
+                  <h3 class="orbit-card-title">Student Profile</h3>
+                  <p class="orbit-card-teaser">Access student details, personal information, class, section, parent details and academic records in one place.</p>
+                  <div class="orbit-card-action-hint">
+                    <span class="hint-text">Click to View Details</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 1: Afternoon • Student Attendance -->
+              <article class="orbit-card" data-index="1" data-atmosphere="afternoon" role="button" tabindex="0" aria-label="Afternoon: Student Attendance">
+                <div class="orbit-card-banner">
+                  <img src="img/time-afternoon.jpg" alt="Afternoon Daylight">
+                  <span class="orbit-time-pill"><i class="fas fa-cloud-sun"></i> Afternoon</span>
+                </div>
+                <div class="orbit-card-body">
+                  <div class="orbit-card-header">
+                    <div class="orbit-card-icon"><i class="fas fa-calendar-check"></i></div>
+                    <span class="orbit-role-pill">Daily Tracking</span>
+                  </div>
+                  <h3 class="orbit-card-title">Student Attendance</h3>
+                  <p class="orbit-card-teaser">Monitor daily attendance, view attendance history and track the student's attendance percentage.</p>
+                  <div class="orbit-card-action-hint">
+                    <span class="hint-text">Click to View Details</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Evening Sunset • Fee Management -->
+              <article class="orbit-card" data-index="2" data-atmosphere="evening" role="button" tabindex="0" aria-label="Evening: Fee Management">
+                <div class="orbit-card-banner">
+                  <img src="img/time-evening.jpg" alt="Evening Sunset">
+                  <span class="orbit-time-pill"><i class="fas fa-mountain-sun"></i> Evening</span>
+                </div>
+                <div class="orbit-card-body">
+                  <div class="orbit-card-header">
+                    <div class="orbit-card-icon"><i class="fas fa-wallet"></i></div>
+                    <span class="orbit-role-pill">Transparent Payments</span>
+                  </div>
+                  <h3 class="orbit-card-title">Fee Management</h3>
+                  <p class="orbit-card-teaser">View fee details, pending payments, payment history and fee receipts.</p>
+                  <div class="orbit-card-action-hint">
+                    <span class="hint-text">Click to View Details</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Night • School Updates -->
+              <article class="orbit-card" data-index="3" data-atmosphere="night" role="button" tabindex="0" aria-label="Night: School Updates">
+                <div class="orbit-card-banner">
+                  <img src="img/time-night.jpg" alt="Night with Stars & Moon">
+                  <span class="orbit-time-pill"><i class="fas fa-moon"></i> Night</span>
+                </div>
+                <div class="orbit-card-body">
+                  <div class="orbit-card-header">
+                    <div class="orbit-card-icon"><i class="fas fa-bell"></i></div>
+                    <span class="orbit-role-pill">Stay Connected</span>
+                  </div>
+                  <h3 class="orbit-card-title">School Updates</h3>
+                  <p class="orbit-card-teaser">Receive school announcements, important notices, event updates, exam notifications and homework information.</p>
+                  <div class="orbit-card-action-hint">
+                    <span class="hint-text">Click to View Details</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Orbit Left / Right Arrow Controls -->
+            <button type="button" class="btn-orbit-nav btn-orbit-prev" id="btn-orbit-prev" aria-label="Rotate Previous Card (Left)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button" class="btn-orbit-nav btn-orbit-next" id="btn-orbit-next" aria-label="Rotate Next Card (Right)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Carousel Controls: 4 Dot Pills & Auto-Play Status -->
+          <div class="carousel-orbit-controls">
+            <div class="orbit-dots-list">
+              <button type="button" class="orbit-dot-btn active" data-target-index="0" title="Morning • Student Profile">
+                <span class="dot-indicator"></span>
+                <span class="dot-label"><i class="fas fa-sun"></i> Morning</span>
+              </button>
+              <button type="button" class="orbit-dot-btn" data-target-index="1" title="Afternoon • Student Attendance">
+                <span class="dot-indicator"></span>
+                <span class="dot-label"><i class="fas fa-cloud-sun"></i> Afternoon</span>
+              </button>
+              <button type="button" class="orbit-dot-btn" data-target-index="2" title="Evening • Fee Management">
+                <span class="dot-indicator"></span>
+                <span class="dot-label"><i class="fas fa-mountain-sun"></i> Evening</span>
+              </button>
+              <button type="button" class="orbit-dot-btn" data-target-index="3" title="Night • School Updates">
+                <span class="dot-indicator"></span>
+                <span class="dot-label"><i class="fas fa-moon"></i> Night</span>
+              </button>
+            </div>
+
+            <button type="button" class="btn-orbit-autoplay" id="btn-orbit-autoplay" title="Toggle Auto-Rotation">
+              <i class="fas fa-pause"></i> <span id="autoplay-label">Auto-Rotating</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll Invitation Indicator -->
+      <a href="#campus" class="scroll-indicator-wrap" aria-label="Scroll to descend through clouds">
+        <span>Descend Through Clouds</span>
+        <div class="scroll-indicator-mouse">
+          <div class="scroll-indicator-wheel"></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: MOBILE APP SHOWCASE (STAY CONNECTED)
+       ========================================================================== -->
+  
+  <!-- Cloud Transition Portal: Hero to Campus -->
+  <div class="section-cloud-portal portal-hero-campus" aria-hidden="true" data-cloud-boundary="hero-campus">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+<section class="section-padding campus-descent-section app-showcase-section" id="campus">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-eyebrow"><i class="fas fa-mobile-screen"></i> Native Mobile Ecosystem</span>
+        <h2 class="section-title">Stay Connected with ONE SCHOOL SOLUTION App</h2>
+        <p class="section-desc">
+          Experience seamless real-time connectivity between school, teachers, and home. Our native iOS & Android applications put live school bus tracking, attendance alerts, parent-teacher messaging, and academic progress tracking right in the palm of your hand.
+        </p>
+      </div>
+
+      <!-- Cinematic Mobile App Hero Visual Card -->
+      <div class="campus-hero-card app-hero-showcase-card">
+        <div class="campus-image-viewport">
+          <img src="img/app-interface-screenshot.jpg" id="app-hero-screenshot" alt="ONE SCHOOL SOLUTION Native Mobile App Interface showing live attendance, GPS bus tracking, and student performance dashboard">
+          <div class="campus-overlay-gradient"></div>
+        </div>
+        <div class="campus-content-floating">
+          <div class="campus-headline-wrap">
+            <span class="campus-tag"><i class="fas fa-bolt"></i> React Native Hermes Engine</span>
+            <h3 class="campus-title-strong">Your Child's School Day in Real-Time</h3>
+            <p class="campus-body-text">
+              From morning school bus boarding with live satellite GPS tracking to voice homework memos, daily attendance notifications, and digital grade cards—ONE SCHOOL SOLUTION keeps parents informed and confident at every step.
+            </p>
+          </div>
+          <div class="campus-stats-badge-grid">
+            <div class="campus-stat-box">
+              <div class="campus-stat-val counter-val" data-target="99" data-suffix="%">0</div>
+              <div class="campus-stat-lbl">Parent Satisfaction</div>
+            </div>
+            <div class="campus-stat-box">
+              <div class="campus-stat-val counter-val" data-target="1" data-suffix="-Tap">0</div>
+              <div class="campus-stat-lbl">Sibling Switcher</div>
+            </div>
+            <div class="campus-stat-box">
+              <div class="campus-stat-val counter-val" data-target="16" data-suffix="ms">0</div>
+              <div class="campus-stat-lbl">Ultra-Fast Runtime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pillars of App Features (Real-Time Updates, Communication, Student Tracking, Sibling Switcher) -->
+      <div class="ecosystem-pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon-box"><i class="fas fa-bell"></i></div>
+          <h4 class="pillar-heading">Real-Time Updates & Bus GPS</h4>
+          <p class="pillar-text">
+            Instant push notifications for morning attendance check-ins, homework assignments, school circulars, and live satellite bus tracking with dynamic ETA countdown.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box"><i class="fas fa-comments"></i></div>
+          <h4 class="pillar-heading">Parent-Teacher Communication</h4>
+          <p class="pillar-text">
+            Direct private messaging channels, voice note memos, leave application approvals, and scheduled digital parent-teacher conference coordination.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box"><i class="fas fa-chart-line"></i></div>
+          <h4 class="pillar-heading">Student Progress Tracking</h4>
+          <p class="pillar-text">
+            Holistic 360° academic performance tracking, formative assessment trendlines, subject-wise GPA breakdown, and digital report card downloads in 1-tap.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box"><i class="fas fa-users-rectangle"></i></div>
+          <h4 class="pillar-heading">Multi-Child Sibling Switcher</h4>
+          <p class="pillar-text">
+            Effortlessly toggle between children across different grades and classrooms without re-logging. Unified fee payment, digital receipts, and event schedules.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: PARENT AND PRINCIPAL PARTNERSHIP
+       ========================================================================== */
+  ========================================================================== -->
+  
+  <!-- Cloud Transition Portal: Campus to Partnership -->
+  <!-- Cloud Transition Portal: Campus to Experience -->
+  <div class="section-cloud-portal portal-campus-experience" aria-hidden="true" data-cloud-boundary="campus-experience">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+
+  <section class="experience-section" id="experience">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <span class="section-eyebrow" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
+          <i class="fas fa-mobile-screen"></i> Interactive Mobile Ecosystem Simulator
+        </span>
+        <h2 class="section-title">Experience the Platform in Action</h2>
+        <p class="section-desc">
+          Test drive the live, fully working mobile interfaces for both Teachers and Parents. Select a role below to take class attendance, input midterm scores, review timetable periods, and manage homework.
+        </p>
+      </div>
+
+      <!-- Role Switcher: Teacher App vs Parent App -->
+      <div class="app-role-switcher-bar">
+        <button class="role-switch-btn active" id="btn-role-teacher" data-role="teacher">
+          <i class="fas fa-chalkboard-user"></i> Teacher App
+        </button>
+        <button class="role-switch-btn" id="btn-role-parent" data-role="parent">
+          <i class="fas fa-user-group"></i> Parent App
+        </button>
+      </div>
+
+      <!-- Interactive Mobile Showcase Stage -->
+      <div class="parent-app-showcase-stage">
+
+        <!-- Smartphone Chassis -->
+        <div class="smartphone-chassis parent-app-chassis">
+
+          <!-- ================================================================
+               ROLE VIEW 1: TEACHER APP SCREEN (Active by default)
+               ================================================================ -->
+          <div class="smartphone-screen app-role-screen active" id="teacher-app-screen">
+
+            <!-- Hardware Notch / Dynamic Island -->
+            <div class="phone-notch">
+              <div class="camera-sensor"></div>
+              <div class="speaker-slit"></div>
+            </div>
+
+            <!-- Phone Status Bar -->
+            <div class="phone-status-bar">
+              <span class="phone-clock">9:41 AM</span>
+              <div class="phone-status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+              </div>
+            </div>
+
+            <!-- MAIN SCROLLABLE APP BODY (Teacher Home Screen) -->
+            <div class="teacher-app-main-body" id="teacher-main-view">
+
+              <!-- 1. Top App Bar -->
+              <header class="t-app-header">
+                <div class="t-app-brand">
+                  <div class="t-app-crest" title="SunRais International School Crest"></div>
+                  <div class="t-brand-text">
+                    <h3 class="t-brand-title">SunRais International School</h3>
+                    <span class="t-brand-sub">Teacher app</span>
+                  </div>
+                </div>
+
+                <div class="t-app-actions">
+                  <!-- Notification Bell with Red Badge "5" -->
+                  <button class="t-bell-btn" id="t-btn-bell" title="Notifications">
+                    <i class="far fa-bell"></i>
+                    <span class="t-bell-badge" id="t-bell-count">5</span>
+                  </button>
+                </div>
+              </header>
+
+              <!-- 2. Welcome Banner Card -->
+              <div class="t-welcome-card" id="t-welcome-card" title="Tap for morning brief">
+                <div class="t-welcome-bg-overlay"></div>
+                <div class="t-welcome-content">
+                  <span class="t-welcome-eyebrow">MONDAY 16 NOVEMBER</span>
+                  <h4 class="t-welcome-heading">Good morning, Aditi</h4>
+                  <p class="t-welcome-desc">
+                    0 assigned classes and 5 unread updates.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3. Teacher Profile Card -->
+              <div class="t-profile-card" id="t-profile-card" title="Tap to view teacher profile details">
+                <div class="t-profile-left">
+                  <div class="t-profile-avatar" id="t-active-avatar"></div>
+                  <div class="t-profile-info">
+                    <h4 class="t-profile-name">Aditi Hegde</h4>
+                    <p class="t-profile-sub">Teacher account • 0 assigned classes</p>
+                  </div>
+                </div>
+                <div class="t-profile-arrow">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <!-- 4. Today's schedule - Daily overview Header -->
+              <div class="t-section-header-row">
+                <div class="t-sec-title-wrap">
+                  <i class="far fa-calendar-alt t-sec-icon" style="color:#0284c7;"></i>
+                  <h4 class="t-sec-title">Today's schedule - Daily overview</h4>
+                </div>
+              </div>
+
+              <!-- 5. Two Metric Tiles (Side by Side) -->
+              <div class="t-metrics-grid">
+                
+                <!-- Metric 1: Classes today (Green pastel) -->
+                <div class="t-metric-tile tile-metric-green" id="t-tile-classes-today" role="button" tabindex="0">
+                  <div class="t-metric-icon-wrap" style="color:#10b981;">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <div class="t-metric-val">0</div>
+                  <strong class="t-metric-label">Classes today</strong>
+                  <span class="t-metric-sub" style="color:#10b981;">0 scheduled</span>
+                </div>
+
+                <!-- Metric 2: To-do tasks (Amber pastel) -->
+                <div class="t-metric-tile tile-metric-amber" id="t-tile-todo-tasks" role="button" tabindex="0">
+                  <div class="t-metric-icon-wrap" style="color:#f59e0b;">
+                    <i class="far fa-clipboard"></i>
+                  </div>
+                  <div class="t-metric-val">0</div>
+                  <strong class="t-metric-label">To-do tasks</strong>
+                  <span class="t-metric-sub" style="color:#f59e0b;">Nothing due today</span>
+                </div>
+
+              </div>
+
+              <!-- 6. Quick actions Section Header -->
+              <div class="t-section-header-row" style="margin-top:6px;">
+                <div class="t-sec-title-wrap">
+                  <i class="fas fa-bolt-lightning t-sec-icon" style="color:#0284c7;"></i>
+                  <h4 class="t-sec-title">Quick actions</h4>
+                </div>
+              </div>
+
+              <!-- 7. Quick Actions Grid (5 Tiles matching reference) -->
+              <div class="t-quick-actions-grid">
+                
+                <!-- Action 1: Take attendance (Pastel Green) -->
+                <div class="t-action-tile tile-act-green" id="t-act-attendance" role="button" tabindex="0">
+                  <div class="t-act-icon-box box-green">
+                    <i class="fas fa-circle-check"></i>
+                  </div>
+                  <div class="t-act-text">
+                    <strong class="t-act-title">Take attendance</strong>
+                    <span class="t-act-sub">Grade 8 • A</span>
+                  </div>
+                </div>
+
+                <!-- Action 2: Enter marks (Pastel Purple) -->
+                <div class="t-action-tile tile-act-purple" id="t-act-marks" role="button" tabindex="0">
+                  <div class="t-act-icon-box box-purple">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="t-act-text">
+                    <strong class="t-act-title">Enter marks</strong>
+                    <span class="t-act-sub">Midterm • Maths</span>
+                  </div>
+                </div>
+
+                <!-- Action 3: Assignments (Pastel Amber) -->
+                <div class="t-action-tile tile-act-amber" id="t-act-assignments" role="button" tabindex="0">
+                  <div class="t-act-icon-box box-amber">
+                    <i class="fas fa-pen-to-square"></i>
+                  </div>
+                  <div class="t-act-text">
+                    <strong class="t-act-title">Assignments</strong>
+                    <span class="t-act-sub">3 active</span>
+                  </div>
+                </div>
+
+                <!-- Action 4: Parent messages (Pastel Pink) -->
+                <div class="t-action-tile tile-act-pink" id="t-act-messages" role="button" tabindex="0">
+                  <div class="t-act-icon-box box-pink">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <div class="t-act-text">
+                    <strong class="t-act-title">Parent messages</strong>
+                    <span class="t-act-sub">All caught up</span>
+                  </div>
+                </div>
+
+                <!-- Action 5: Student development (Pastel Lavender) -->
+                <div class="t-action-tile tile-act-lavender" id="t-act-development" role="button" tabindex="0">
+                  <div class="t-act-icon-box box-lavender">
+                    <i class="fas fa-clipboard-user"></i>
+                  </div>
+                  <div class="t-act-text">
+                    <strong class="t-act-title">Student development</strong>
+                    <span class="t-act-sub">Observations & follow-up</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- 8. Today's schedule Card -->
+              <div class="t-schedule-card" id="t-card-schedule">
+                <div class="t-sched-header">
+                  <div class="t-sched-title-wrap">
+                    <i class="far fa-calendar-alt" style="color:#0284c7; font-size:16px;"></i>
+                    <strong>Today's schedule</strong>
+                  </div>
+                  <button class="t-sched-link" id="t-btn-timetable">Full timetable</button>
+                </div>
+                <p class="t-sched-empty-text">
+                  No lessons have been assigned to your teacher account yet. Ask the school administrator to assign your timetable periods.
+                </p>
+              </div>
+
+              <!-- 9. Marks Draft Waiting Alert Banner -->
+              <div class="t-draft-banner" id="t-banner-draft">
+                <div class="t-draft-left">
+                  <div class="t-draft-icon-circle">
+                    <i class="fas fa-exclamation"></i>
+                  </div>
+                  <div class="t-draft-text">
+                    <strong>Marks draft waiting</strong>
+                    <p>6 student scores remain before submission.</p>
+                  </div>
+                </div>
+                <button class="t-draft-btn" id="t-btn-review-draft">Review</button>
+              </div>
+
+              <!-- Space for bottom floating bar -->
+              <div style="height: 68px;"></div>
+
+            </div>
+
+            <!-- 10. Floating Bottom Navigation Bar (4 Items) -->
+            <nav class="t-bottom-nav">
+              <button class="t-nav-item active" id="t-nav-home">
+                <div class="t-nav-pill">
+                  <i class="fas fa-house"></i>
+                </div>
+                <span>Home</span>
+              </button>
+              <button class="t-nav-item" id="t-nav-classes">
+                <div class="t-nav-pill">
+                  <i class="fas fa-user-group"></i>
+                </div>
+                <span>Classes</span>
+              </button>
+              <button class="t-nav-item" id="t-nav-notifications">
+                <div class="t-nav-pill" style="position:relative;">
+                  <i class="far fa-bell"></i>
+                  <span class="t-nav-badge" id="t-nav-badge-count">5</span>
+                </div>
+                <span>Notifications</span>
+              </button>
+              <button class="t-nav-item" id="t-nav-calendar">
+                <div class="t-nav-pill">
+                  <i class="far fa-calendar-days"></i>
+                </div>
+                <span>Calendar</span>
+              </button>
+            </nav>
+
+            <!-- 11. IN-SCREEN SUBVIEW SCREENS FOR TEACHER APP -->
+
+            <!-- Subview T1: Take Attendance Screen (Grade 8 • A) -->
+            <div class="t-subview" id="t-subview-attendance">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Take Attendance</h4>
+                <span class="subview-pill pill-green">Grade 8 • A</span>
+              </div>
+              <div class="subview-body">
+                <div class="t-roster-summary-card">
+                  <div class="t-roster-metric">
+                    <strong id="t-present-count">28</strong>
+                    <span>Present</span>
+                  </div>
+                  <div class="t-roster-metric">
+                    <strong id="t-absent-count" style="color:#ef4444;">1</strong>
+                    <span>Absent</span>
+                  </div>
+                  <div class="t-roster-metric">
+                    <strong id="t-late-count" style="color:#f59e0b;">1</strong>
+                    <span>Late</span>
+                  </div>
+                </div>
+
+                <div class="t-student-roster-list">
+                  <div class="t-student-row" data-status="present">
+                    <div class="t-st-avatar">AS</div>
+                    <div class="t-st-info">
+                      <strong>Aarav Sharma</strong>
+                      <span>Roll #01 • Grade 8-A</span>
+                    </div>
+                    <div class="t-att-toggles">
+                      <button class="t-att-btn att-p active">P</button>
+                      <button class="t-att-btn att-a">A</button>
+                      <button class="t-att-btn att-l">L</button>
+                    </div>
+                  </div>
+
+                  <div class="t-student-row" data-status="present">
+                    <div class="t-st-avatar">AR</div>
+                    <div class="t-st-info">
+                      <strong>Ananya Rao</strong>
+                      <span>Roll #02 • Grade 8-A</span>
+                    </div>
+                    <div class="t-att-toggles">
+                      <button class="t-att-btn att-p active">P</button>
+                      <button class="t-att-btn att-a">A</button>
+                      <button class="t-att-btn att-l">L</button>
+                    </div>
+                  </div>
+
+                  <div class="t-student-row" data-status="absent">
+                    <div class="t-st-avatar">DR</div>
+                    <div class="t-st-info">
+                      <strong>Diya Reddy</strong>
+                      <span>Roll #03 • Grade 8-A</span>
+                    </div>
+                    <div class="t-att-toggles">
+                      <button class="t-att-btn att-p">P</button>
+                      <button class="t-att-btn att-a active">A</button>
+                      <button class="t-att-btn att-l">L</button>
+                    </div>
+                  </div>
+
+                  <div class="t-student-row" data-status="late">
+                    <div class="t-st-avatar">KM</div>
+                    <div class="t-st-info">
+                      <strong>Kabir Mehta</strong>
+                      <span>Roll #04 • Grade 8-A</span>
+                    </div>
+                    <div class="t-att-toggles">
+                      <button class="t-att-btn att-p">P</button>
+                      <button class="t-att-btn att-a">A</button>
+                      <button class="t-att-btn att-l active">L</button>
+                    </div>
+                  </div>
+
+                  <div class="t-student-row" data-status="present">
+                    <div class="t-st-avatar">RV</div>
+                    <div class="t-st-info">
+                      <strong>Rohan Verma</strong>
+                      <span>Roll #05 • Grade 8-A</span>
+                    </div>
+                    <div class="t-att-toggles">
+                      <button class="t-att-btn att-p active">P</button>
+                      <button class="t-att-btn att-a">A</button>
+                      <button class="t-att-btn att-l">L</button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="p-subview-btn btn-green" id="t-btn-submit-attendance" style="margin-top:10px;">
+                  <i class="fas fa-cloud-arrow-up"></i> Submit Attendance to School Portal
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T2: Enter Marks Screen (Midterm • Maths) -->
+            <div class="t-subview" id="t-subview-marks">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Enter Marks</h4>
+                <span class="subview-pill pill-purple">Midterm • Maths</span>
+              </div>
+              <div class="subview-body">
+                <div class="subview-card">
+                  <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                      <strong>Subject: Mathematics</strong>
+                      <p style="font-size:10.5px; color:#64748b; margin:2px 0 0;">Exam: Midterm Term 1 • Max: 100</p>
+                    </div>
+                    <span class="subview-pill pill-green">Grading Open</span>
+                  </div>
+                </div>
+
+                <div class="t-marks-list">
+                  <div class="t-mark-row">
+                    <div>
+                      <strong>Aarav Sharma</strong>
+                      <span>Roll #01</span>
+                    </div>
+                    <div class="t-mark-input-wrap">
+                      <input type="number" class="t-score-input" value="94" max="100">
+                      <span class="t-max-lbl">/ 100</span>
+                    </div>
+                  </div>
+
+                  <div class="t-mark-row">
+                    <div>
+                      <strong>Ananya Rao</strong>
+                      <span>Roll #02</span>
+                    </div>
+                    <div class="t-mark-input-wrap">
+                      <input type="number" class="t-score-input" value="89" max="100">
+                      <span class="t-max-lbl">/ 100</span>
+                    </div>
+                  </div>
+
+                  <div class="t-mark-row">
+                    <div>
+                      <strong>Diya Reddy</strong>
+                      <span>Roll #03</span>
+                    </div>
+                    <div class="t-mark-input-wrap">
+                      <input type="number" class="t-score-input" value="78" max="100">
+                      <span class="t-max-lbl">/ 100</span>
+                    </div>
+                  </div>
+
+                  <div class="t-mark-row draft-row">
+                    <div>
+                      <strong>Kabir Mehta</strong>
+                      <span style="color:#d97706;"><i class="fas fa-clock"></i> Draft Score</span>
+                    </div>
+                    <div class="t-mark-input-wrap">
+                      <input type="number" class="t-score-input" value="82" max="100" style="border-color:#f59e0b;">
+                      <span class="t-max-lbl">/ 100</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="p-subview-btn btn-blue" id="t-btn-save-marks" style="margin-top:10px;">
+                  <i class="fas fa-floppy-disk"></i> Save & Sync Marks with Portal
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T3: Assignments Manager Screen -->
+            <div class="t-subview" id="t-subview-assignments">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Assignments</h4>
+                <span class="subview-pill pill-purple">3 Active</span>
+              </div>
+              <div class="subview-body">
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-math">Grade 8-A • Maths</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Due Tomorrow</span>
+                  </div>
+                  <h5 class="hw-task-title">Chapter 4: Word Problems on Fractions</h5>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+                    <span style="font-size:11px; color:#10b981; font-weight:750;">24 / 30 Submissions</span>
+                    <button class="t-mini-pill-btn" id="t-btn-eval-hw">Evaluate (24)</button>
+                  </div>
+                </div>
+
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-science">Grade 9-B • Physics</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Due Thursday</span>
+                  </div>
+                  <h5 class="hw-task-title">Ray Diagrams of Concave Mirrors</h5>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+                    <span style="font-size:11px; color:#64748b; font-weight:750;">18 / 28 Submissions</span>
+                    <button class="t-mini-pill-btn">Evaluate (18)</button>
+                  </div>
+                </div>
+
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-math">Grade 8-A • Algebra</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Due Friday</span>
+                  </div>
+                  <h5 class="hw-task-title">Linear Equations in One Variable</h5>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+                    <span style="font-size:11px; color:#64748b; font-weight:750;">12 / 30 Submissions</span>
+                    <button class="t-mini-pill-btn">Evaluate (12)</button>
+                  </div>
+                </div>
+
+                <button class="p-subview-btn btn-green" id="t-btn-create-assignment" style="margin-top:10px;">
+                  <i class="fas fa-plus"></i> Create New Assignment
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T4: Parent Messages Screen -->
+            <div class="t-subview" id="t-subview-messages">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Parent Messages</h4>
+                <span class="subview-pill pill-blue">All Caught Up</span>
+              </div>
+              <div class="subview-body">
+                <div class="t-message-threads">
+                  <div class="t-thread-card" data-thread="manikanta">
+                    <div class="t-thread-avatar">MC</div>
+                    <div class="t-thread-body">
+                      <div style="display:flex; justify-content:space-between;">
+                        <strong>Mr. Manikanta (Aadhya's Father)</strong>
+                        <span style="font-size:9.5px; color:#94a3b8;">10:14 AM</span>
+                      </div>
+                      <p>Thank you teacher for the feedback on Aadhya's maths worksheet. She has completed corrections.</p>
+                    </div>
+                  </div>
+
+                  <div class="t-thread-card" data-thread="rajesh">
+                    <div class="t-thread-avatar">RS</div>
+                    <div class="t-thread-body">
+                      <div style="display:flex; justify-content:space-between;">
+                        <strong>Mr. Rajesh Sharma (Aarav's Father)</strong>
+                        <span style="font-size:9.5px; color:#94a3b8;">Yesterday</span>
+                      </div>
+                      <p>Will the science practical exam schedule be shared on the calendar today?</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="subview-card" style="margin-top:auto;">
+                  <h5 class="subview-card-title"><i class="fas fa-reply"></i> Reply to Manikanta Chandra</h5>
+                  <div style="display:flex; gap:6px;">
+                    <input type="text" class="form-input" id="t-msg-reply-input" placeholder="Type a message to parent..." style="flex-grow:1;">
+                    <button class="p-subview-btn btn-blue" id="t-btn-send-msg" style="padding:8px 14px;"><i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subview T5: Student Development Screen -->
+            <div class="t-subview" id="t-subview-development">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Student Development</h4>
+                <span class="subview-pill pill-purple">Observations</span>
+              </div>
+              <div class="subview-body">
+                <div class="subview-card">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <strong>Aarav Sharma (Grade 8-A)</strong>
+                    <span class="subview-pill pill-green">Active Follow-up</span>
+                  </div>
+                  <p style="font-size:11px; color:#475569; line-height:1.4;">
+                    Demonstrating strong analytical problem solving in algebra. Recommended for the Inter-School Science Olympiad.
+                  </p>
+                  <span style="font-size:9.5px; color:#94a3b8; margin-top:4px; display:block;">Logged on 12 Nov • Aditi Hegde</span>
+                </div>
+
+                <div class="subview-card">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <strong>Diya Reddy (Grade 8-A)</strong>
+                    <span class="subview-pill pill-blue">Mentorship Note</span>
+                  </div>
+                  <p style="font-size:11px; color:#475569; line-height:1.4;">
+                    Showing positive peer collaboration in laboratory experiments. Additional practice assigned for fractions.
+                  </p>
+                  <span style="font-size:9.5px; color:#94a3b8; margin-top:4px; display:block;">Logged on 08 Nov • Aditi Hegde</span>
+                </div>
+
+                <button class="p-subview-btn btn-blue" id="t-btn-log-observation" style="margin-top:10px;">
+                  <i class="fas fa-pen"></i> Add New Development Observation
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T6: Full Timetable Screen -->
+            <div class="t-subview" id="t-subview-timetable">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Teacher Timetable</h4>
+                <span class="subview-pill pill-blue">Weekly Schedule</span>
+              </div>
+              <div class="subview-body">
+                <div class="subview-card" style="background:#f0f9ff; border-color:#bae6fd;">
+                  <strong style="color:#0284c7; font-size:12.5px;"><i class="fas fa-info-circle"></i> Timetable Assignment Notice</strong>
+                  <p style="font-size:11px; color:#0369a1; margin:4px 0 0; line-height:1.4;">
+                    Your official teaching periods have been submitted by the Academic Coordinator. Review the provisional schedule below:
+                  </p>
+                </div>
+
+                <div class="t-timetable-list">
+                  <div class="t-period-row">
+                    <div class="t-period-time"><strong>08:30 AM</strong><span>Period 1</span></div>
+                    <div class="t-period-detail"><strong>Mathematics</strong><span>Grade 8-A • Room 104</span></div>
+                    <span class="cal-badge badge-event">Class</span>
+                  </div>
+                  <div class="t-period-row">
+                    <div class="t-period-time"><strong>09:20 AM</strong><span>Period 2</span></div>
+                    <div class="t-period-detail"><strong>Planning & Prep</strong><span>Staff Lounge</span></div>
+                    <span class="cal-badge badge-sports">Free</span>
+                  </div>
+                  <div class="t-period-row">
+                    <div class="t-period-time"><strong>10:15 AM</strong><span>Period 3</span></div>
+                    <div class="t-period-detail"><strong>Physics Lab</strong><span>Grade 9-B • Lab 2</span></div>
+                    <span class="cal-badge badge-ptm">Lab</span>
+                  </div>
+                  <div class="t-period-row">
+                    <div class="t-period-time"><strong>11:30 AM</strong><span>Period 4</span></div>
+                    <div class="t-period-detail"><strong>Algebra & Geometry</strong><span>Grade 8-A • Room 104</span></div>
+                    <span class="cal-badge badge-event">Class</span>
+                  </div>
+                </div>
+
+                <button class="p-subview-btn btn-green" id="t-btn-accept-timetable" style="margin-top:10px;">
+                  <i class="fas fa-calendar-check"></i> Sync Schedule to Dashboard
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T7: Review Marks Draft Screen -->
+            <div class="t-subview" id="t-subview-draft">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Marks Draft Waiting</h4>
+                <span class="subview-pill pill-purple">6 Scores Pending</span>
+              </div>
+              <div class="subview-body">
+                <div class="subview-card" style="background:#fffbeb; border-color:#fde68a;">
+                  <strong style="color:#b45309; font-size:12.5px;"><i class="fas fa-triangle-exclamation"></i> Action Required</strong>
+                  <p style="font-size:11px; color:#78350f; margin:4px 0 0;">
+                    6 student scores for Midterm Mathematics remain in draft state. Review and approve before final submission to Board compliance.
+                  </p>
+                </div>
+
+                <div class="t-draft-items-list">
+                  <div class="t-mark-row"><div><strong>Kabir Mehta</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">82</strong>/100</div></div>
+                  <div class="t-mark-row"><div><strong>Rohan Verma</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">79</strong>/100</div></div>
+                  <div class="t-mark-row"><div><strong>Simran Kaur</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">91</strong>/100</div></div>
+                  <div class="t-mark-row"><div><strong>Tarun Nair</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">85</strong>/100</div></div>
+                  <div class="t-mark-row"><div><strong>Varun Joshi</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">74</strong>/100</div></div>
+                  <div class="t-mark-row"><div><strong>Zoya Khan</strong><span>Grade 8-A</span></div><div class="t-mark-input-wrap"><strong style="color:#d97706;">96</strong>/100</div></div>
+                </div>
+
+                <button class="p-subview-btn btn-green" id="t-btn-approve-all-draft" style="margin-top:10px;">
+                  <i class="fas fa-check-double"></i> Approve & Submit All 6 Scores
+                </button>
+              </div>
+            </div>
+
+            <!-- Subview T8: Notifications Screen -->
+            <div class="t-subview" id="t-subview-notifications">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-t-back="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Teacher Updates</h4>
+                <button class="subview-action-text" id="t-btn-clear-notifications">Mark all read</button>
+              </div>
+              <div class="subview-body">
+                <div class="notif-list">
+                  <div class="notif-item unread">
+                    <div class="notif-icon-box icon-academic"><i class="fas fa-users"></i></div>
+                    <div class="notif-text">
+                      <strong>Staff Council Meeting at 3:30 PM</strong>
+                      <p>Agenda: Midterm examination moderation and CBSE curriculum review in Conference Hall.</p>
+                      <span class="notif-time">25 mins ago</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread">
+                    <div class="notif-icon-box icon-fees"><i class="fas fa-calendar-check"></i></div>
+                    <div class="notif-text">
+                      <strong>Casual Leave Approved</strong>
+                      <p>Your leave request for 28 Nov has been approved by the Principal.</p>
+                      <span class="notif-time">2 hours ago</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread">
+                    <div class="notif-icon-box icon-bus"><i class="fas fa-bus"></i></div>
+                    <div class="notif-text">
+                      <strong>Campus Bus Route #14 Arrived</strong>
+                      <p>Morning arrival manifest verified by gate security staff.</p>
+                      <span class="notif-time">08:15 AM</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread">
+                    <div class="notif-icon-box icon-academic"><i class="fas fa-award"></i></div>
+                    <div class="notif-text">
+                      <strong>Science Olympiad Nominations Open</strong>
+                      <p>Nominate top 5 performing students from Grade 8 & 9 before Friday.</p>
+                      <span class="notif-time">Yesterday</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread">
+                    <div class="notif-icon-box icon-fees"><i class="fas fa-file-invoice"></i></div>
+                    <div class="notif-text">
+                      <strong>Monthly Salary Slip Published</strong>
+                      <p>November payroll advice slip ready in the Teacher Staff Portal.</p>
+                      <span class="notif-time">2 days ago</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- In-Phone Feedback Toast -->
+            <div class="p-phone-toast" id="t-phone-toast">
+              <i class="fas fa-circle-check toast-icon"></i>
+              <span class="toast-text" id="t-toast-msg">Action completed</span>
+            </div>
+
+          </div>
+
+          <!-- ================================================================
+               ROLE VIEW 2: PARENT APP SCREEN (Active when Parent is selected)
+               ================================================================ -->
+          <div class="smartphone-screen app-role-screen" id="parent-app-phone">
+
+            <!-- Hardware Notch / Dynamic Island -->
+            <div class="phone-notch">
+              <div class="camera-sensor"></div>
+              <div class="speaker-slit"></div>
+            </div>
+
+            <!-- Phone Status Bar -->
+            <div class="phone-status-bar">
+              <span class="phone-clock">9:41 AM</span>
+              <div class="phone-status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+              </div>
+            </div>
+
+            <!-- MAIN SCROLLABLE APP BODY (Home Screen) -->
+            <div class="parent-app-main-body" id="app-main-view">
+
+              <!-- 1. Top App Bar -->
+              <header class="p-app-header">
+                <div class="p-app-brand">
+                  <div class="p-app-crest" title="SunRais International Crest"></div>
+                  <div class="p-brand-text">
+                    <h3 class="p-brand-title">SunRais Internati...</h3>
+                    <span class="p-brand-sub">Parent app</span>
+                  </div>
+                </div>
+
+                <div class="p-app-actions">
+                  <!-- Language Selector Pill -->
+                  <button class="p-lang-pill" id="p-btn-lang" title="Select Language">
+                    <i class="fas fa-globe"></i>
+                    <span id="p-active-lang-text">English</span>
+                    <i class="fas fa-chevron-down p-chevron-mini"></i>
+                  </button>
+
+                  <!-- Notification Bell Button -->
+                  <button class="p-bell-btn" id="p-btn-bell" title="Notifications">
+                    <i class="far fa-bell"></i>
+                    <span class="p-bell-badge" id="p-bell-count">3</span>
+                  </button>
+                </div>
+              </header>
+
+              <!-- 2. Welcome Banner Card -->
+              <div class="p-welcome-card" id="p-welcome-card" title="Tap for school announcement">
+                <div class="p-welcome-bg-overlay"></div>
+                <div class="p-welcome-content">
+                  <span class="p-welcome-eyebrow">WELCOME BACK</span>
+                  <h4 class="p-welcome-heading">Welcome back, Manikanta!</h4>
+                  <div class="p-welcome-wave" aria-hidden="true">👋</div>
+                  <p class="p-welcome-desc">
+                    Every little step today builds a brighter tomorrow. ✨ Stay connected with your child's learning journey, achievements, and happy moments.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3. Student Profile Switcher Card -->
+              <div class="p-student-card" id="p-student-card" title="Tap to switch child profile or view details">
+                <div class="p-student-left">
+                  <div class="p-student-avatar" id="p-active-avatar"></div>
+                  <div class="p-student-info">
+                    <h4 class="p-student-name" id="p-display-name">Aadhya Chandra</h4>
+                    <p class="p-student-grade" id="p-display-grade">Grade 9 • Section B</p>
+                  </div>
+                </div>
+                <div class="p-student-arrow">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <!-- 4. 2x2 Feature Cards Grid -->
+              <div class="p-features-grid">
+
+                <!-- Card 1: Attendance (Pastel Green) -->
+                <div class="p-feature-tile tile-attendance" id="p-tile-attendance" role="button" tabindex="0">
+                  <div class="tile-icon-wrap">
+                    <i class="far fa-calendar-check tile-main-icon"></i>
+                  </div>
+                  <h4 class="tile-title">Attendance</h4>
+                  <p class="tile-subtitle">Track school days</p>
+                  <div class="tile-action-row">
+                    <span class="tile-circle-btn"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+
+                <!-- Card 2: Today's homework (Pastel Purple) -->
+                <div class="p-feature-tile tile-homework" id="p-tile-homework" role="button" tabindex="0">
+                  <div class="tile-icon-wrap">
+                    <i class="far fa-edit tile-main-icon"></i>
+                  </div>
+                  <h4 class="tile-title">Today's homework</h4>
+                  <p class="tile-subtitle" id="p-hw-summary-subtitle">3 active tasks</p>
+                  <div class="tile-action-row">
+                    <span class="tile-circle-btn"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+
+                <!-- Card 3: Notifications (Pastel Pink) -->
+                <div class="p-feature-tile tile-notifications" id="p-tile-notifications" role="button" tabindex="0">
+                  <div class="tile-icon-wrap">
+                    <i class="far fa-bell tile-main-icon"></i>
+                  </div>
+                  <h4 class="tile-title">Notifications</h4>
+                  <p class="tile-subtitle">School, class & personal updates</p>
+                  <div class="tile-action-row">
+                    <span class="tile-circle-btn"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+
+                <!-- Card 4: School calendar (Pastel Amber) -->
+                <div class="p-feature-tile tile-calendar" id="p-tile-calendar" role="button" tabindex="0">
+                  <div class="tile-icon-wrap">
+                    <div class="calendar-icon-styled">
+                      <span class="cal-top-bar"></span>
+                      <span class="cal-num">31</span>
+                    </div>
+                  </div>
+                  <h4 class="tile-title">School calendar</h4>
+                  <p class="tile-subtitle">Events and dates</p>
+                  <div class="tile-action-row">
+                    <span class="tile-circle-btn"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- 5. School Moments Section -->
+              <div class="p-moments-section">
+                <div class="p-moments-header">
+                  <div class="p-moments-title-wrap">
+                    <i class="far fa-images p-moments-icon"></i>
+                    <h4 class="p-moments-title">School moments</h4>
+                  </div>
+                  <button class="p-moments-link" id="p-btn-moments-all">3 latest</button>
+                </div>
+
+                <!-- Moments Horizontal Gallery Track -->
+                <div class="p-moments-track">
+                  <div class="p-moment-card" data-moment="annual-day">
+                    <div class="moment-thumb" style="background-image: url('img/classroom-scene.jpg');">
+                      <span class="moment-tag">Annual Fest</span>
+                    </div>
+                    <div class="moment-info">
+                      <strong>Annual Day 2026</strong>
+                      <span>14 Photos • Auditorium</span>
+                    </div>
+                  </div>
+
+                  <div class="p-moment-card" data-moment="science-expo">
+                    <div class="moment-thumb" style="background-image: url('img/school-campus.jpg');">
+                      <span class="moment-tag">STEM Expo</span>
+                    </div>
+                    <div class="moment-info">
+                      <strong>Robotics & Science Fair</strong>
+                      <span>22 Photos • Innovation Hub</span>
+                    </div>
+                  </div>
+
+                  <div class="p-moment-card" data-moment="sports-day">
+                    <div class="moment-thumb" style="background-image: url('img/parent-principal.jpg');">
+                      <span class="moment-tag">Athletics</span>
+                    </div>
+                    <div class="moment-info">
+                      <strong>Inter-School Sports Meet</strong>
+                      <span>18 Photos • Sports Arena</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Space for bottom floating bar -->
+              <div style="height: 64px;"></div>
+
+            </div>
+
+            <!-- 6. Floating Bottom Navigation Bar -->
+            <nav class="p-bottom-nav">
+              <button class="p-nav-item active" id="p-nav-home">
+                <div class="p-nav-pill">
+                  <i class="fas fa-house"></i>
+                </div>
+                <span>Home</span>
+              </button>
+              <button class="p-nav-item" id="p-nav-more">
+                <div class="p-nav-pill">
+                  <i class="fas fa-border-all"></i>
+                </div>
+                <span>More</span>
+              </button>
+            </nav>
+
+            <!-- 7. IN-SCREEN SUBVIEW SCREENS (Parent App) -->
+
+            <!-- Subview A: Attendance Screen -->
+            <div class="p-subview" id="subview-attendance">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-back-to="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Attendance Details</h4>
+                <span class="subview-pill pill-green">Present Today</span>
+              </div>
+              <div class="subview-body">
+                <div class="att-metric-box">
+                  <div class="att-gauge-ring">
+                    <span class="att-pct" id="p-att-stat-pct">96.8%</span>
+                    <span class="att-pct-label">Overall</span>
+                  </div>
+                  <div class="att-stats-summary">
+                    <div class="att-stat-item"><strong id="p-att-present-days">122</strong><span>Present</span></div>
+                    <div class="att-stat-item"><strong id="p-att-absent-days">2</strong><span>Absent</span></div>
+                    <div class="att-stat-item"><strong id="p-att-leave-days">4</strong><span>Leaves</span></div>
+                  </div>
+                </div>
+
+                <div class="subview-card">
+                  <h5 class="subview-card-title"><i class="fas fa-clock"></i> Today's Smart RFID Gate Entry</h5>
+                  <div class="rfid-log-row">
+                    <div class="log-dot dot-in"></div>
+                    <div class="log-details">
+                      <strong>Campus Main Gate Punch-In</strong>
+                      <span>08:14 AM • RFID #SIS-09 Verified</span>
+                    </div>
+                    <span class="log-status ok">ON TIME</span>
+                  </div>
+                  <div class="rfid-log-row">
+                    <div class="log-dot dot-bus"></div>
+                    <div class="log-details">
+                      <strong>School Bus #14 Boarding Scan</strong>
+                      <span>07:42 AM • Sector 4 Pickup Point</span>
+                    </div>
+                    <span class="log-status ok">SAFE</span>
+                  </div>
+                </div>
+
+                <!-- Interactive Leave Application -->
+                <div class="subview-card">
+                  <h5 class="subview-card-title"><i class="fas fa-file-pen"></i> Apply for Leave</h5>
+                  <form id="p-leave-form" class="p-mini-form">
+                    <label class="form-lbl">Leave Reason</label>
+                    <select class="form-sel" id="leave-reason-select">
+                      <option value="Medical / Health">Medical / Doctor Appointment</option>
+                      <option value="Family Function">Family Event / Function</option>
+                      <option value="Sports Tournament">External Sports Competition</option>
+                    </select>
+                    <label class="form-lbl" style="margin-top:8px;">Date</label>
+                    <input type="date" class="form-input" id="leave-date-input" value="2026-05-22">
+                    <button type="submit" class="p-subview-btn btn-green" style="margin-top:12px;">
+                      <i class="fas fa-paper-plane"></i> Submit Leave Application
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subview B: Today's Homework Screen -->
+            <div class="p-subview" id="subview-homework">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-back-to="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Today's Homework</h4>
+                <span class="subview-pill pill-purple" id="hw-active-count-badge">3 Tasks</span>
+              </div>
+              <div class="subview-body">
+
+                <!-- Progress Bar -->
+                <div class="hw-progress-card">
+                  <div class="hw-progress-header">
+                    <span>Completion Status</span>
+                    <strong id="hw-progress-text">1 of 3 Completed</strong>
+                  </div>
+                  <div class="hw-progress-bar-bg">
+                    <div class="hw-progress-bar-fill" id="hw-progress-fill" style="width: 33%;"></div>
+                  </div>
+                </div>
+
+                <!-- Task 1 (Mathematics with TTS Voice AI) -->
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-math">Mathematics</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Tomorrow 9 AM</span>
+                  </div>
+                  <h5 class="hw-task-title">Chapter 4: Word Problems on Fractions</h5>
+                  <p class="hw-task-desc" id="hw-math-text">
+                    Complete problems 1 to 10 on Page 48 in your homework notebook. Show full calculation steps.
+                  </p>
+                  <div class="hw-task-actions">
+                    <button class="hw-tts-btn" id="p-btn-hw-speak" title="Listen with Voice AI">
+                      <i class="fas fa-volume-high"></i> <span id="tts-label-text">Read Aloud (Voice AI)</span>
+                    </button>
+                    <span class="hw-attachment-chip">
+                      <i class="fas fa-file-pdf"></i> fractions_ws.pdf
+                    </span>
+                  </div>
+                  <label class="hw-check-label">
+                    <input type="checkbox" class="hw-checkbox" data-task-id="task-math">
+                    <span>Mark as Completed</span>
+                  </label>
+                </div>
+
+                <!-- Task 2 (Science) -->
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-science">Science</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Thursday</span>
+                  </div>
+                  <h5 class="hw-task-title">Ray Diagrams of Concave Mirrors</h5>
+                  <p class="hw-task-desc">
+                    Draw and label focal point, center of curvature, and principal axis for all 6 object positions in your practical log book.
+                  </p>
+                  <label class="hw-check-label">
+                    <input type="checkbox" class="hw-checkbox" data-task-id="task-science" checked>
+                    <span>Mark as Completed</span>
+                  </label>
+                </div>
+
+                <!-- Task 3 (English) -->
+                <div class="hw-task-card">
+                  <div class="hw-task-header">
+                    <span class="subject-tag tag-english">English Literature</span>
+                    <span class="hw-due-badge"><i class="far fa-clock"></i> Friday</span>
+                  </div>
+                  <h5 class="hw-task-title">The Merchant of Venice • Act 2</h5>
+                  <p class="hw-task-desc">
+                    Write a 150-word character sketch of Portia highlighting her wit and resolve in Scene 7.
+                  </p>
+                  <label class="hw-check-label">
+                    <input type="checkbox" class="hw-checkbox" data-task-id="task-english">
+                    <span>Mark as Completed</span>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Subview C: Notifications Screen -->
+            <div class="p-subview" id="subview-notifications">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-back-to="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">Notifications</h4>
+                <button class="subview-action-text" id="p-btn-clear-notifications">Mark all read</button>
+              </div>
+              <div class="subview-body">
+                <div class="notif-filters">
+                  <button class="notif-pill active" data-notif-filter="all">All</button>
+                  <button class="notif-pill" data-notif-filter="bus">Transport</button>
+                  <button class="notif-pill" data-notif-filter="academic">Academics</button>
+                  <button class="notif-pill" data-notif-filter="fees">Fees</button>
+                </div>
+
+                <div class="notif-list" id="p-notif-container">
+                  <div class="notif-item unread" data-category="bus">
+                    <div class="notif-icon-box icon-bus"><i class="fas fa-bus"></i></div>
+                    <div class="notif-text">
+                      <strong>Bus #14 Arrived at Campus</strong>
+                      <p>Aadhya has safely deboarded at the main school porch.</p>
+                      <span class="notif-time">12 mins ago</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread" data-category="academic">
+                    <div class="notif-icon-box icon-academic"><i class="fas fa-award"></i></div>
+                    <div class="notif-text">
+                      <strong>Unit Test 2 Results Published</strong>
+                      <p>Progress report card is ready. Aadhya scored Grade A+ in Maths & Science.</p>
+                      <span class="notif-time">2 hours ago</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+
+                  <div class="notif-item unread" data-category="fees">
+                    <div class="notif-icon-box icon-fees"><i class="fas fa-receipt"></i></div>
+                    <div class="notif-text">
+                      <strong>Quarter 2 Fee Receipt Acknowledged</strong>
+                      <p>Payment of ₹32,000 confirmed. Receipt #SIS-2026-9481 generated.</p>
+                      <span class="notif-time">Yesterday</span>
+                    </div>
+                    <span class="notif-unread-dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subview D: School Calendar Screen -->
+            <div class="p-subview" id="subview-calendar">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-back-to="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">School Calendar</h4>
+                <button class="subview-action-text" id="p-btn-sync-calendar"><i class="fas fa-rotate"></i> Sync</button>
+              </div>
+              <div class="subview-body">
+
+                <!-- Mini Calendar Header -->
+                <div class="cal-mini-header">
+                  <h5>May 2026</h5>
+                  <span>Term 1 Academic Session</span>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="cal-events-list">
+                  <div class="cal-event-card">
+                    <div class="cal-event-date date-amber">
+                      <span class="d-day">20</span>
+                      <span class="d-month">MAY</span>
+                    </div>
+                    <div class="cal-event-info">
+                      <strong>Annual Science & Robotics Expo</strong>
+                      <span>09:00 AM - 02:00 PM • Campus Central Quadrangle</span>
+                      <span class="cal-badge badge-event">Flagship Event</span>
+                    </div>
+                  </div>
+
+                  <div class="cal-event-card">
+                    <div class="cal-event-date date-blue">
+                      <span class="d-day">28</span>
+                      <span class="d-month">MAY</span>
+                    </div>
+                    <div class="cal-event-info">
+                      <strong>Parent-Teacher Conference (PTM)</strong>
+                      <span>10:30 AM - Slot #4 Booked • Room 204</span>
+                      <span class="cal-badge badge-ptm">Appointment Confirmed</span>
+                    </div>
+                  </div>
+
+                  <div class="cal-event-card">
+                    <div class="cal-event-date date-green">
+                      <span class="d-day">02</span>
+                      <span class="d-month">JUN</span>
+                    </div>
+                    <div class="cal-event-info">
+                      <strong>Inter-School Athletics Championship</strong>
+                      <span>Full Day • Olympic Sports Ground</span>
+                      <span class="cal-badge badge-sports">Sports</span>
+                    </div>
+                  </div>
+
+                  <div class="cal-event-card">
+                    <div class="cal-event-date date-purple">
+                      <span class="d-day">15</span>
+                      <span class="d-month">JUN</span>
+                    </div>
+                    <div class="cal-event-info">
+                      <strong>Summer Vacation Break Commences</strong>
+                      <span>School reopens on Monday, July 13th</span>
+                      <span class="cal-badge badge-holiday">Holiday</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="p-subview-btn btn-blue" id="p-btn-add-gcal" style="margin-top:14px;">
+                  <i class="far fa-calendar-plus"></i> Add All Events to Phone Calendar
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Subview E: More Services Drawer Screen -->
+            <div class="p-subview" id="subview-more">
+              <div class="subview-topbar">
+                <button class="subview-back-btn" data-back-to="home"><i class="fas fa-arrow-left"></i></button>
+                <h4 class="subview-title">More Services</h4>
+                <span></span>
+              </div>
+              <div class="subview-body">
+
+                <!-- Bus Tracking Simulation Card -->
+                <div class="subview-card">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <h5 class="subview-card-title"><i class="fas fa-location-dot" style="color:#ef4444;"></i> Live Bus GPS Tracker</h5>
+                    <span class="log-status ok">ON ROUTE</span>
+                  </div>
+                  <div class="bus-tracker-box">
+                    <div class="bus-map-sim">
+                      <i class="fas fa-bus-simple bus-pin-sim"></i>
+                      <div class="bus-pulse-sim"></div>
+                    </div>
+                    <div class="bus-meta-sim">
+                      <strong>Bus Route #14 (Campus Express)</strong>
+                      <p>Current: Near Palm Meadows (ETA Home: 8 mins)</p>
+                      <span style="font-size:11px; color:#64748b;">Driver: Ramesh Kumar • +91 98801 77210</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick Links Grid -->
+                <div class="more-menu-grid">
+                  <div class="more-menu-item" id="more-item-fees">
+                    <i class="fas fa-credit-card item-ico" style="color:#10b981;"></i>
+                    <strong>Fee Payments</strong>
+                    <span>Pay & Receipts</span>
+                  </div>
+                  <div class="more-menu-item" id="more-item-timetable">
+                    <i class="fas fa-table item-ico" style="color:#8b5cf6;"></i>
+                    <strong>Timetable</strong>
+                    <span>Class Schedule</span>
+                  </div>
+                  <div class="more-menu-item" id="more-item-clinic">
+                    <i class="fas fa-heart-pulse item-ico" style="color:#ec4899;"></i>
+                    <strong>Campus Clinic</strong>
+                    <span>Health Vitals</span>
+                  </div>
+                  <div class="more-menu-item" id="more-item-contact">
+                    <i class="fas fa-headset item-ico" style="color:#f59e0b;"></i>
+                    <strong>Helpdesk</strong>
+                    <span>Principal Line</span>
+                  </div>
+                </div>
+
+                <div class="subview-card" style="margin-top:12px; text-align:center;">
+                  <p style="font-size:11px; color:#64748b; margin-bottom:6px;">SunRais International Parent App • Version 2.4</p>
+                  <span class="subview-pill pill-blue">Edge Sync Active</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Subview F: Sibling / Student Switcher Modal Bottom Sheet -->
+            <div class="p-sheet-backdrop" id="p-sibling-sheet">
+              <div class="p-bottom-sheet">
+                <div class="sheet-drag-handle"></div>
+                <h4 class="sheet-title">Select Student</h4>
+                <p class="sheet-desc">Switch between enrolled siblings under this parent account</p>
+
+                <div class="sibling-choice-item active" data-sibling="aadhya">
+                  <div class="sib-avatar-pick sib-aadhya"></div>
+                  <div class="sib-info">
+                    <strong>Aadhya Chandra</strong>
+                    <span>Grade 9 • Section B • Roll #09</span>
+                  </div>
+                  <i class="fas fa-check-circle sib-check"></i>
+                </div>
+
+                <div class="sibling-choice-item" data-sibling="aarav">
+                  <div class="sib-avatar-pick sib-aarav"></div>
+                  <div class="sib-info">
+                    <strong>Aarav Chandra</strong>
+                    <span>Grade 5 • Section A • Roll #14</span>
+                  </div>
+                  <i class="fas fa-check-circle sib-check"></i>
+                </div>
+
+                <button class="sheet-close-btn" id="btn-close-sibling-sheet">Cancel</button>
+              </div>
+            </div>
+
+            <!-- Subview G: Language Picker Bottom Sheet -->
+            <div class="p-sheet-backdrop" id="p-lang-sheet">
+              <div class="p-bottom-sheet">
+                <div class="sheet-drag-handle"></div>
+                <h4 class="sheet-title"><i class="fas fa-globe"></i> Select Language</h4>
+                <p class="sheet-desc">Choose your preferred app interface language</p>
+
+                <div class="lang-choice-list">
+                  <button class="lang-opt-btn active" data-lang="English">
+                    <span>English (Default)</span>
+                    <i class="fas fa-check"></i>
+                  </button>
+                  <button class="lang-opt-btn" data-lang="हिन्दी">
+                    <span>हिन्दी (Hindi)</span>
+                    <i class="fas fa-check"></i>
+                  </button>
+                  <button class="lang-opt-btn" data-lang="తెలుగు">
+                    <span>తెలుగు (Telugu)</span>
+                    <i class="fas fa-check"></i>
+                  </button>
+                  <button class="lang-opt-btn" data-lang="தமிழ்">
+                    <span>தமிழ் (Tamil)</span>
+                    <i class="fas fa-check"></i>
+                  </button>
+                  <button class="lang-opt-btn" data-lang="ಕನ್ನಡ">
+                    <span>ಕನ್ನಡ (Kannada)</span>
+                    <i class="fas fa-check"></i>
+                  </button>
+                </div>
+
+                <button class="sheet-close-btn" id="btn-close-lang-sheet">Done</button>
+              </div>
+            </div>
+
+            <!-- Subview H: School Moments Lightbox Modal -->
+            <div class="p-sheet-backdrop" id="p-moment-lightbox">
+              <div class="p-lightbox-modal">
+                <button class="lightbox-close-btn" id="btn-close-lightbox"><i class="fas fa-xmark"></i></button>
+                <div class="lightbox-img-wrap" id="lightbox-bg-img"></div>
+                <div class="lightbox-caption">
+                  <h4 id="lightbox-title">Annual Day Celebrations 2026</h4>
+                  <p id="lightbox-desc">Students performing the classical welcome dance in the school auditorium.</p>
+                  <div class="lightbox-interactions">
+                    <button class="moment-react-btn" id="btn-like-moment"><i class="far fa-heart"></i> <span id="moment-like-cnt">128</span> Likes</button>
+                    <button class="moment-react-btn" id="btn-share-moment"><i class="fas fa-share-nodes"></i> Share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- In-Phone Interactive Floating Toast Feedback -->
+            <div class="p-phone-toast" id="p-phone-toast">
+              <i class="fas fa-circle-check toast-icon"></i>
+              <span class="toast-text" id="p-toast-msg">Action completed</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Desktop Companion Controller & Feature Highlights -->
+        <div class="parent-app-showcase-sidebar">
+
+          <div class="companion-card-box">
+            <div class="companion-badge">
+              <span class="live-dot"></span> <span id="companion-role-badge">Teacher App Live Simulation</span>
+            </div>
+            <h3 class="companion-title" id="companion-role-title">SunRais Teacher App</h3>
+            <p class="companion-desc" id="companion-role-desc">
+              Experience the teacher mobile interface modeled directly from our live school production app. Tap anywhere on the phone or use the quick test triggers below:
+            </p>
+
+            <!-- Dynamic Triggers for Teacher Mode -->
+            <div class="companion-test-triggers" id="triggers-teacher">
+              <button class="quick-test-btn" data-t-trigger="attendance">
+                <i class="fas fa-circle-check" style="color:#10b981;"></i> Take Attendance (Grade 8 • A)
+              </button>
+              <button class="quick-test-btn" data-t-trigger="marks">
+                <i class="fas fa-graduation-cap" style="color:#8b5cf6;"></i> Enter Midterm Marks
+              </button>
+              <button class="quick-test-btn" data-t-trigger="assignments">
+                <i class="fas fa-pen-to-square" style="color:#f59e0b;"></i> Manage Active Assignments
+              </button>
+              <button class="quick-test-btn" data-t-trigger="messages">
+                <i class="fas fa-comments" style="color:#ec4899;"></i> Open Parent Chat Messages
+              </button>
+              <button class="quick-test-btn" data-t-trigger="development">
+                <i class="fas fa-clipboard-user" style="color:#7c3aed;"></i> Student Development Notes
+              </button>
+              <button class="quick-test-btn" data-t-trigger="draft">
+                <i class="fas fa-triangle-exclamation" style="color:#d97706;"></i> Review Pending Marks Draft
+              </button>
+              <button class="quick-test-btn" data-t-trigger="timetable">
+                <i class="far fa-calendar-alt" style="color:#0284c7;"></i> View Weekly Timetable
+              </button>
+            </div>
+
+            <!-- Dynamic Triggers for Parent Mode -->
+            <div class="companion-test-triggers" id="triggers-parent" style="display:none;">
+              <button class="quick-test-btn btn-trigger-att" data-trigger="attendance">
+                <i class="far fa-calendar-check" style="color:#10b981;"></i> Test Attendance Tracking
+              </button>
+              <button class="quick-test-btn btn-trigger-hw" data-trigger="homework">
+                <i class="far fa-edit" style="color:#8b5cf6;"></i> Test Homework & Voice AI Read Aloud
+              </button>
+              <button class="quick-test-btn btn-trigger-notif" data-trigger="notifications">
+                <i class="far fa-bell" style="color:#ec4899;"></i> Test Live Push Notifications
+              </button>
+              <button class="quick-test-btn btn-trigger-cal" data-trigger="calendar">
+                <i class="far fa-calendar-days" style="color:#f59e0b;"></i> Test School Calendar & Events
+              </button>
+              <button class="quick-test-btn btn-trigger-sib" data-trigger="sibling">
+                <i class="fas fa-users-viewfinder" style="color:#38bdf8;"></i> Test Sibling Profile Switcher
+              </button>
+              <button class="quick-test-btn btn-trigger-moments" data-trigger="moments">
+                <i class="far fa-images" style="color:#06b6d4;"></i> Test School Moments Photo Gallery
+              </button>
+              <button class="quick-test-btn btn-trigger-bus" data-trigger="more">
+                <i class="fas fa-bus-simple" style="color:#fbbf24;"></i> Test Live Bus GPS & Services
+              </button>
+            </div>
+
+            <!-- Feature Highlights -->
+            <div class="companion-features-list">
+              <div class="c-feat-item">
+                <div class="c-feat-icon" style="color:#10b981; background:rgba(16,185,129,0.15);"><i class="fas fa-bolt"></i></div>
+                <div>
+                  <strong>Rapid Classroom Workflows</strong>
+                  <p>Attendance and marks entered in under 15 seconds directly from the mobile app.</p>
+                </div>
+              </div>
+              <div class="c-feat-item">
+                <div class="c-feat-icon" style="color:#8b5cf6; background:rgba(139,92,246,0.15);"><i class="fas fa-network-wired"></i></div>
+                <div>
+                  <strong>Instant Two-Way Synchronization</strong>
+                  <p>Marks and attendance sync automatically to the school administration and parent portals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cloud Transition Portal: Experience to Partnership -->
+  <div class="section-cloud-portal portal-experience-partnership" aria-hidden="true" data-cloud-boundary="experience-partnership">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+<section class="section-padding partnership-section" id="partnership">
+    <div class="container">
+      <div class="split-cinematic-row">
+
+        <!-- Photorealistic Cinematic Image: Principal & Parent Shaking Hands -->
+        <div class="cinematic-media-frame">
+          <img src="img/parent-principal.jpg" alt="Indian Male School Principal smiling and shaking hands with an Indian Male Parent beside his daughter in school uniform">
+          <div class="media-corner-badge">
+            <i class="fas fa-handshake-angle"></i>
+            <div>
+              <strong>Sacred Trust</strong>
+              <span>Principal, Parent & Student Harmony</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partnership Content & Message -->
+        <div class="partnership-content">
+          <span class="section-eyebrow"><i class="fas fa-heart"></i> Shared Commitment</span>
+          <h2 class="section-title">"We Will Take Care of Your Child."</h2>
+
+          <div class="quote-highlight-card">
+            <div class="quote-phrase">Trust is built on transparency.</div>
+            <p class="quote-subtext">
+              When a father entrusts his daughter to the school each morning, he shouldn't wonder how she is doing. ONE SCHOOL SOLUTION keeps parents instantly informed of attendance, meals, achievements, and safety.
+            </p>
+          </div>
+
+          <ul class="trust-checkpoints-list">
+            <li class="trust-checkpoint">
+              <div class="check-icon-circle"><i class="fas fa-check"></i></div>
+              <div class="checkpoint-text">
+                <h4>Real-Time Gate & Bus Arrival Notifications</h4>
+                <p>Instant push alerts as soon as your child scans into the morning bus and campus entrance.</p>
+              </div>
+            </li>
+
+            <li class="trust-checkpoint">
+              <div class="check-icon-circle"><i class="fas fa-check"></i></div>
+              <div class="checkpoint-text">
+                <h4>Direct 1-on-1 Teacher Communication</h4>
+                <p>Threaded messaging with read receipts and school circular feeds, bridging home and classroom.</p>
+              </div>
+            </li>
+
+            <li class="trust-checkpoint">
+              <div class="check-icon-circle"><i class="fas fa-check"></i></div>
+              <div class="checkpoint-text">
+                <h4>Holistic Observations & Safeguarding</h4>
+                <p>Track strengths, study habits, and concentration ratings with dedicated counselor escalations.</p>
+              </div>
+            </li>
+
+            <li class="trust-checkpoint">
+              <div class="check-icon-circle"><i class="fas fa-check"></i></div>
+              <div class="checkpoint-text">
+                <h4>Digital Fee Receipts & Invoices</h4>
+                <p>Transparent fee structures, instant payments, and auto-generated printable receipts with tax info.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: CLASSROOM EXCELLENCE
+       ========================================================================== -->
+  
+  <!-- Cloud Transition Portal: Partnership to Classroom -->
+  <div class="section-cloud-portal portal-partnership-classroom" aria-hidden="true" data-cloud-boundary="partnership-classroom">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+<section class="section-padding classroom-section" id="classroom">
+    <div class="container">
+      <div class="split-cinematic-row reverse">
+
+        <!-- Classroom Content -->
+        <div class="partnership-content">
+          <span class="section-eyebrow"><i class="fas fa-chalkboard-user"></i> Engaging Classrooms</span>
+          <h2 class="section-title">Inspiring Every Young Mind to Excel.</h2>
+          <p class="section-desc">
+            Education comes alive when teachers have tools that eliminate paperwork and empower individualized attention. In vibrant classrooms across the nation, educators celebrate student milestones in real time.
+          </p>
+
+          <div class="quote-highlight-card">
+            <div class="quote-phrase">More teaching, zero busywork.</div>
+            <p class="quote-subtext">
+              Teachers mark daily registers in seconds, assign homework with worksheet PDFs, enter exam grades with automatic bounds checks, and praise student achievements.
+            </p>
+          </div>
+
+          <div class="classroom-metrics-row">
+            <div class="class-mini-metric">
+              <div class="num">1-Tap</div>
+              <div class="lbl">Attendance Batch</div>
+            </div>
+            <div class="class-mini-metric">
+              <div class="num">TTS</div>
+              <div class="lbl">Audio Homework</div>
+            </div>
+            <div class="class-mini-metric">
+              <div class="num">5-Tier</div>
+              <div class="lbl">Student Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photorealistic Classroom Image: Teacher in Saree & Clapping Students -->
+        <div class="cinematic-media-frame">
+          <img src="img/classroom-scene.jpg" alt="Indian female teacher in traditional saree appreciating a student project while classroom students clap joyfully">
+          <div class="media-corner-badge">
+            <i class="fas fa-sparkles"></i>
+            <div>
+              <strong>Active Learning</strong>
+              <span>Nurturing Confidence & Joy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: PLATFORM FEATURES BY ROLE (Interactive Hub)
+       ========================================================================== -->
+  
+  <!-- Cloud Transition Portal: Classroom to Features -->
+  <div class="section-cloud-portal portal-classroom-features" aria-hidden="true" data-cloud-boundary="classroom-features">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+<section class="section-padding features-role-section" id="features">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-eyebrow"><i class="fas fa-layer-group"></i> Tailored Experiences</span>
+        <h2 class="section-title">Simplifying School Life for Everyone</h2>
+        <p class="section-desc">
+          Every participant in the school community deserves an intuitive interface built specifically for their daily tasks.
+        </p>
+      </div>
+
+      <!-- Role Selector Tabs -->
+      <div class="role-switcher-tabs">
+        <button class="role-tab-btn active" data-role="parents"><i class="fas fa-user-group"></i> For Parents</button>
+        <button class="role-tab-btn" data-role="teachers"><i class="fas fa-chalkboard-teacher"></i> For Teachers</button>
+        <button class="role-tab-btn" data-role="admins"><i class="fas fa-user-tie"></i> For Administrators & Staff</button>
+      </div>
+
+      <!-- PARENTS FEATURE PANEL -->
+      <div class="role-feature-panel active" id="panel-parents">
+        <div class="features-card-grid">
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-children"></i></div>
+            <h3 class="card-title-lg">Multi-Child Switcher</h3>
+            <p class="card-desc-p">
+              Instantly toggle between enrolled siblings without logging out. View each child's grades, attendance, and timetable separately.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Sibling Profile</span>
+              <span class="bullet-tag">One Account</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-calendar-check"></i></div>
+            <h3 class="card-title-lg">Real-Time Attendance</h3>
+            <p class="card-desc-p">
+              Visual monthly calendar grid with colored day cells (Present, Absent, Holiday, Late) and circular 75% threshold progress gauge.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Calendar Grid</span>
+              <span class="bullet-tag">Threshold Alert</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-book-open-reader"></i></div>
+            <h3 class="card-title-lg">Homework with Audio TTS</h3>
+            <p class="card-desc-p">
+              Subject filtering, attached worksheet PDF downloads, submission due dates, and Text-to-Speech audio read-aloud buttons.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Voice Read Aloud</span>
+              <span class="bullet-tag">PDF Preview</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3 class="card-title-lg">Digital Fees & Receipts</h3>
+            <p class="card-desc-p">
+              View tuition, transport, and lab fee heads. Pay online or offline and download instant printable receipts with school affiliation tax details.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Instant Receipts</span>
+              <span class="bullet-tag">Payment Ledger</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-comments"></i></div>
+            <h3 class="card-title-lg">Teacher Chat & Circulars</h3>
+            <p class="card-desc-p">
+              Threaded 1-on-1 parent-teacher chat with delivery and read receipts, plus school-wide announcements with audio read-out.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Read Receipts</span>
+              <span class="bullet-tag">Audio Feed</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-camera-retro"></i></div>
+            <h3 class="card-title-lg">School Moments Gallery</h3>
+            <p class="card-desc-p">
+              Stream high-resolution campus photos and event videos with captions, celebrating your child's stage performances and sports achievements.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Photo Stream</span>
+              <span class="bullet-tag">Campus Life</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TEACHERS FEATURE PANEL -->
+      <div class="role-feature-panel" id="panel-teachers">
+        <div class="features-card-grid">
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-clipboard-check"></i></div>
+            <h3 class="card-title-lg">Fast Attendance Register</h3>
+            <p class="card-desc-p">
+              Batch "Mark All Present" with fast single-tap toggles for Absent and Late. Two-phase Draft and Published audit tracking.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Batch Actions</span>
+              <span class="bullet-tag">Audit Trail</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-file-pen"></i></div>
+            <h3 class="card-title-lg">Homework Publisher</h3>
+            <p class="card-desc-p">
+              Publish subject assignments in seconds with attached worksheets, rubrics, submission deadlines, and student completion tracking.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Worksheets</span>
+              <span class="bullet-tag">Completion Stats</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-graduation-cap"></i></div>
+            <h3 class="card-title-lg">Marks Entry & Validation</h3>
+            <p class="card-desc-p">
+              Subject mark entry grids with automatic maximum and passing marks validation preventing clerical errors before publishing.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Bounds Validator</span>
+              <span class="bullet-tag">Publish Workflow</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-chart-line"></i></div>
+            <h3 class="card-title-lg">Student Development Notes</h3>
+            <p class="card-desc-p">
+              Log behavioral observations, strengths, and study habits using a 5-level assessment scale with safeguarding escalation flags.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">5-Tier Scale</span>
+              <span class="bullet-tag">Safeguarding</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-calendar-days"></i></div>
+            <h3 class="card-title-lg">Class Timetable & Periods</h3>
+            <p class="card-desc-p">
+              Weekly schedule grid with conflict detection preventing double-booking of classrooms or lab equipment.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Weekly Schedule</span>
+              <span class="bullet-tag">Room Allocations</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-bullhorn"></i></div>
+            <h3 class="card-title-lg">Broadcasts & Notices</h3>
+            <p class="card-desc-p">
+              Send instant notices to whole class sections or individual parents with file attachments and emergency SMS triggers.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Class Broadcasts</span>
+              <span class="bullet-tag">Deep Linking</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ADMINISTRATORS & STAFF FEATURE PANEL -->
+      <div class="role-feature-panel" id="panel-admins">
+        <div class="features-card-grid">
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-id-card"></i></div>
+            <h3 class="card-title-lg">Batch Student ID Designer</h3>
+            <p class="card-desc-p">
+              Design ID card templates with school branding, QR codes, emergency contacts, and export print-ready A4 batch sheets.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Printable PDF</span>
+              <span class="bullet-tag">QR Code Barcode</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-user-plus"></i></div>
+            <h3 class="card-title-lg">Two-Column Admissions</h3>
+            <p class="card-desc-p">
+              Multi-step student registration capturing medical history, blood group, allergies, parent KYC, address, and transport requirements.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">KYC & Medical</span>
+              <span class="bullet-tag">Transport Routes</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-tasks"></i></div>
+            <h3 class="card-title-lg">Staff Timetable & Duties</h3>
+            <p class="card-desc-p">
+              Schedule Morning, Afternoon, Evening, and Night shifts. Interactive checklists with device camera photo proof upload.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Shift Roster</span>
+              <span class="bullet-tag">Photo Proof</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-money-check-dollar"></i></div>
+            <h3 class="card-title-lg">Payroll & Monthly Slips</h3>
+            <p class="card-desc-p">
+              Basic pay, HRA, PF deductions, and attendance-adjusted net calculations. Batch generation and digital disbursement tracking.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Automated Slips</span>
+              <span class="bullet-tag">Statutory Deductions</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-building-columns"></i></div>
+            <h3 class="card-title-lg">CBSE / ICSE Board Compliance</h3>
+            <p class="card-desc-p">
+              Built-in compliance schemas with automated student data validation against board fields and formatted export runs.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">CBSE / ICSE</span>
+              <span class="bullet-tag">Audit History</span>
+            </div>
+          </div>
+
+          <div class="feature-rich-card">
+            <div class="card-icon-pill"><i class="fas fa-shield-virus"></i></div>
+            <h3 class="card-title-lg">Selective Safe Data Wipe</h3>
+            <p class="card-desc-p">
+              Enterprise Danger Zone architecture with constant-time password authorization, rate limiting, and 18-category selective purge.
+            </p>
+            <div class="card-bullet-tags">
+              <span class="bullet-tag">Enterprise Safe</span>
+              <span class="bullet-tag">Security Audit</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: PRODUCT EXPERIENCE (Live Interactive Simulators)
+       ========================================================================== -->
+  
+  <!-- Cloud Transition Portal: Features to Experience -->
+  <!-- Cloud Transition Portal: Features to CTA -->
+  <div class="section-cloud-portal portal-features-cta" aria-hidden="true" data-cloud-boundary="features-cta">
+    <div class="portal-cloud-stream">
+      <div class="portal-billow p-billow-1"></div>
+      <div class="portal-billow p-billow-2"></div>
+      <div class="portal-billow p-billow-3"></div>
+    </div>
+  </div>
+
+  <section class="final-cta-section" id="cta">
+    <div class="cta-mesh-glow"></div>
+    <div class="container">
+
+      <div class="cta-center-content">
+        <div class="cta-brand-logo-small">
+          <img src="img/logo.png" alt="ONE SCHOOL SOLUTIONS Official Logo">
+        </div>
+
+        <h2 class="cta-main-title">
+          One School. One Solution.<br>
+          <span style="background: linear-gradient(135deg, #fef08a 0%, #f59e0b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            A Brighter Future.
+          </span>
+        </h2>
+
+        <p class="cta-subtext">
+          Join leading educational institutions in empowering teachers, reassuring parents, and optimizing administrative operations through one unified platform.
+        </p>
+
+        <div class="cta-buttons-group">
+          <button class="btn-primary-hero trigger-demo-modal">
+            <i class="fas fa-rocket"></i>
+            <span>Book Demo</span>
+          </button>
+          <button type="button" class="btn-secondary-hero btn-click-to-join trigger-demo-modal">
+            <i class="fas fa-user-plus"></i>
+            <span>Click to Join</span>
+          </button>
+        </div>
+
+        <!-- Direct Contact Us Channels -->
+        <div class="cta-contact-box" id="contact-us-block">
+          <div class="cta-contact-header">
+            <span class="cta-contact-badge"><i class="fas fa-headset"></i> Direct Support & Enquiries</span>
+            <h3 class="cta-contact-title">Contact Us</h3>
+            <p class="cta-contact-desc">Have questions or want a customized campus walkthrough? Connect directly with our institutional onboarding team.</p>
+          </div>
+          
+          <div class="cta-contact-grid">
+            <!-- Email Card -->
+            <a href="mailto:onesolution9880@gmail.com" class="cta-contact-card" title="Send email to onesolution9880@gmail.com">
+              <div class="contact-card-icon contact-icon-mail">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-lbl">Official Gmail</span>
+                <strong class="contact-card-val">onesolution9880@gmail.com</strong>
+                <span class="contact-card-sub">Click to send an email</span>
+              </div>
+              <div class="contact-card-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+919743118531" class="cta-contact-card" title="Call +91 97431 18531">
+              <div class="contact-card-icon contact-icon-phone">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-card-lbl">Direct Phone & WhatsApp</span>
+                <strong class="contact-card-val">+91 97431 18531</strong>
+                <span class="contact-card-sub">Available Mon – Sat, 9 AM – 7 PM</span>
+              </div>
+              <div class="contact-card-arrow">
+                <i class="fas fa-phone"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Grid -->
+      <footer class="site-footer">
+        <div class="footer-top-grid">
+
+          <div class="footer-brand-col">
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <img src="img/logo.png" style="width:40px; height:40px; border-radius:10px; object-fit:contain;" alt="ONE SCHOOL SOLUTIONS OS²">
+              <strong style="font-size:1.1rem; color:#ffffff;">ONE SCHOOL SOLUTIONS</strong>
+            </div>
+            <p>
+              The premier school management ecosystem connecting schools, parents, teachers, and administrators. Built with Next.js, React Native, and Drizzle ORM.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Platform</h4>
+            <ul class="footer-links-list">
+              <li><a href="#campus">Campus Architecture</a></li>
+              <li><a href="#features">24 Admin Workspaces</a></li>
+              <li><a href="#experience">Mobile App Portals</a></li>
+              <li><a href="#experience">Offline Delta Sync</a></li>
+              <li><a href="#hero">Institutional Overview</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Role Portals</h4>
+            <ul class="footer-links-list">
+              <li><a href="#features">Parent Portal</a></li>
+              <li><a href="#features">Teacher Portal</a></li>
+              <li><a href="#features">Staff & Timetable</a></li>
+              <li><a href="#features">Principal & Admin</a></li>
+              <li><a href="#features">CBSE Board Integrations</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Contact Us</h4>
+            <ul class="footer-links-list footer-contact-list">
+              <li>
+                <a href="mailto:onesolution9880@gmail.com" style="display:flex; align-items:center; gap:0.5rem; word-break:break-all;">
+                  <i class="fas fa-envelope" style="color:#f87171;"></i> onesolution9880@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+919743118531" style="display:flex; align-items:center; gap:0.5rem;">
+                  <i class="fas fa-phone-alt" style="color:#4ade80;"></i> +91 97431 18531
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/919743118531" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:0.5rem;">
+                  <i class="fab fa-whatsapp" style="color:#22c55e;"></i> WhatsApp Direct
+                </a>
+              </li>
+              <li>
+                <span style="color:#94a3b8; font-size:0.85rem; display:flex; align-items:center; gap:0.5rem;">
+                  <i class="fas fa-clock" style="color:#fbbf24;"></i> Mon–Sat, 9 AM – 7 PM
+                </span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>
+            © 2026 ONE SCHOOL SOLUTION (OS²). All rights reserved.
+          </div>
+          <div style="display:flex; gap:1.5rem;">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Board Compliance</a>
+            <a href="#">Security Runbook</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION: POPUP SMALL PAGE – CAROUSEL CARD DETAILED INFORMATION
+       ========================================================================== -->
+  <div class="orbit-expanded-details-panel" id="orbit-expanded-details-panel" role="dialog" aria-modal="true" aria-labelledby="exp-title">
+    <div class="expanded-panel-card" id="expanded-panel-card">
+      <button type="button" class="btn-close-expanded-panel" id="btn-close-expanded-panel" aria-label="Close details" title="Close details">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="expanded-panel-header">
+        <div class="expanded-badge-strip">
+          <span class="expanded-time-pill" id="exp-time-pill"><i class="fas fa-sun"></i> Morning • 06:00 AM</span>
+          <span class="expanded-role-pill" id="exp-role-pill">Complete Student Information</span>
+        </div>
+        <h3 class="expanded-title" id="exp-title">Student Profile</h3>
+        <div class="expanded-tagline" id="exp-tagline">
+          <i class="fas fa-user-graduate"></i> Unified Student Dossier • Instant Academic & Personal Records
+        </div>
+        <p class="expanded-desc" id="exp-desc">
+          Access student details, personal information, class, section, parent details and academic records in one place.
+        </p>
+      </div>
+
+      <!-- 2-Column Key Capabilities Grid -->
+      <h4 class="expanded-section-title">
+        <i class="fas fa-circle-check"></i> Key Capabilities & Feature Highlights
+      </h4>
+      <ul class="expanded-specs-grid" id="exp-specs-grid">
+        <!-- Dynamically populated via JS -->
+      </ul>
+
+      <!-- Live Metric Badges Strip (4 columns) -->
+      <div class="expanded-metrics-strip" id="exp-metrics-strip">
+        <!-- Dynamically populated via JS -->
+      </div>
+
+      <!-- Action Bar -->
+      <div class="expanded-action-bar">
+        <a href="#experience" class="btn-expanded-action" id="exp-action-btn">
+          <i class="fas fa-user-graduate" id="exp-action-icon"></i>
+          <span id="exp-action-text">Explore Student Experience</span>
+        </a>
+        <button type="button" class="btn-expanded-collapse" id="btn-expanded-collapse">
+          <i class="fas fa-times"></i> Close Details
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION: INTERACTIVE GOOGLE FORM DEMO REQUEST MODAL
+       ========================================================================== -->
+  <div class="demo-modal-backdrop" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-join-title">
+    <div class="demo-modal-dialog gform-modal-dialog">
+      <button class="btn-close-modal" id="btn-close-modal" aria-label="Close Modal" title="Close Modal">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="gform-modal-header">
+        <div class="join-modal-badge">
+          <span class="badge-dot"></span>
+          <span>FREE DEMO AVAILABLE</span>
+        </div>
+        <h2 class="join-modal-title" id="modal-join-title">Request Your Free Demo</h2>
+        <p class="join-modal-subtitle">
+          Tell us about your school and discover how ONE SCHOOL SOLUTION can transform your school management.
+        </p>
+      </div>
+
+      <!-- Embedded Google Form Iframe -->
+      <div class="gform-iframe-wrapper" id="gform-iframe-wrapper">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf1v0KQ-PIzdIQgzIzMNjs_rZi8F5jPMheCLS48Hfon0xZBVQ/viewform?embedded=true" 
+          width="100%" 
+          height="660" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+          title="ONE SCHOOL SOLUTION – Request a Free Demo"
+          class="google-form-iframe"
+          id="google-form-iframe">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
