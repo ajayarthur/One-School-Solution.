@@ -28,7 +28,7 @@ if (fs.existsSync(envFile)) {
 }
 
 const PORT = process.env.PORT || 3000;
-const RECEIVING_EMAIL = process.env.RECEIVING_EMAIL || 'onesolution9880@gmail.com';
+const RECEIVING_EMAIL = process.env.RECEIVING_EMAIL || 'support@oneschoolsolution.in';
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',

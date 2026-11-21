@@ -18,7 +18,7 @@ Welcome to the official repository for the **ONE SCHOOL SOLUTION (OS²)** websit
   - Tailored feature walkthroughs for Parents, Teachers, and Administrators.
   - Interactive device frames showcasing the native mobile apps.
 - **Direct Contact Channels**:
-  - Official Gmail: [onesolution9880@gmail.com](mailto:onesolution9880@gmail.com)
+  - Official Support Email: [support@oneschoolsolution.in](mailto:support@oneschoolsolution.in)
   - Direct Phone & WhatsApp: [+91 97431 18531](tel:+919743118531)
 - **Zero-Dependency Lightweight Backend**:
   - Built-in Node.js server with Nodemailer email forwarding and static asset delivery.
@@ -83,7 +83,7 @@ The website will be live at:
 
 ## 📧 Contact & Support
 
-- **Email**: [onesolution9880@gmail.com](mailto:onesolution9880@gmail.com)
+- **Email**: [support@oneschoolsolution.in](mailto:support@oneschoolsolution.in)
 - **Phone / WhatsApp**: [+91 97431 18531](tel:+919743118531)
 - **Hours**: Monday – Saturday, 9:00 AM – 7:00 PM IST
 
